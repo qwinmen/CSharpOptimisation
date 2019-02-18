@@ -61,3 +61,27 @@ namespace TaskFuncLogger.Helpers
 		}
 	}
 }
+		/*
+		/// <summary>
+		/// Пример использования метода расширения WithCancellation
+		/// </summary>
+		/// <returns></returns>
+		public static async Task WithCancellationTest()
+		{
+			//Создание обьекта CancellationTokenSource, отменяющего себя через заданный промежуток времени
+			var cts = new CancellationTokenSource(5000);
+			var ct = cts.Token;
+
+			try
+			{
+				//Task.Dealy для тестирования. Заменить другим методом для проверки
+				await Task.Delay(10000).WithCancellation(ct);
+				Console.WriteLine("Задание завершено усешно за 10 секунд");
+			}
+			catch (OperationCanceledException)
+			{
+				Console.WriteLine("Задание было закрыто через 5 секунд после старта. Слишком долгое ожидание.");
+				throw;
+			}
+		}
+		*/

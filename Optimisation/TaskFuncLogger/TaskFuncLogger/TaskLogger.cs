@@ -98,4 +98,38 @@ namespace TaskFuncLogger
 			return task;
 		}
 	}
+
+		/*
+		/// <summary>
+		/// Пример использования логгера
+		/// </summary>
+		/// <returns></returns>
+		public static async Task TaskLoggerTest()
+		{
+#if DEBUG
+			//Использование TaskLogger приводит к лишним затратам памяти
+			//и снижению производительности. Включить для отладочной версии
+			TaskLogger.LogLevel = TaskLogger.TaskLogLevel.Pending;
+#endif
+			//Запускаем 3 задачи. Для тестирования TaskLogger их продолжительность задана явно
+			var tasks = new List<Task>
+			{
+				Task.Delay(2000).Log("2s op"),
+				Task.Delay(5000).Log("5s op"),
+				Task.Delay(6000).Log("6s op"),
+			};
+
+			try
+			{
+				//Ожидание всех задач с отменой через 3 секунды. Только одна задача должна завершиться в указанное время.
+				await Task.WhenAll(tasks).WithCancellation(new CancellationTokenSource(3000).Token);
+			}
+			catch (OperationCanceledException)
+			{ }
+
+			//Запрос информации о незавершенных задачах и их сортировка по убыванию продолжительности ожидания
+			foreach(var op in TaskLogger.GetLogEntries().OrderBy(tle => tle.LogTime))
+				Debug.WriteLine(op);
+		}
+		*/
 }

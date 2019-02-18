@@ -43,7 +43,8 @@ namespace TaskFuncLogger
 		/// Пример использования логгера
 		/// </summary>
 		/// <returns></returns>
-		public static async Task TaskLoggerTest(){
+		public static async Task TaskLoggerTest()
+		{
 #if DEBUG
 			//Использование TaskLogger приводит к лишним затратам памяти
 			//и снижению производительности. Включить для отладочной версии

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskFuncLogger", "TaskFuncL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAlgPower", "TestAlgPower\TestAlgPower\TestAlgPower.csproj", "{6F960193-6688-4155-9492-C87214AB3B60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLock", "TestLock\TestLock.csproj", "{A0D4EFE1-1E78-440D-98F4-2D1F26552D61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6F960193-6688-4155-9492-C87214AB3B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F960193-6688-4155-9492-C87214AB3B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F960193-6688-4155-9492-C87214AB3B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0D4EFE1-1E78-440D-98F4-2D1F26552D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0D4EFE1-1E78-440D-98F4-2D1F26552D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0D4EFE1-1E78-440D-98F4-2D1F26552D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0D4EFE1-1E78-440D-98F4-2D1F26552D61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

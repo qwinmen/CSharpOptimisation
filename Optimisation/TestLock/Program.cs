@@ -8,6 +8,7 @@ namespace TestLock
 		public static void Main(string[] args)
 		{
 			StrangeBehavior.LocalMain();
+			LocSpeedTest.LocalMain();
 			Console.ReadLine();
 		}
 	}

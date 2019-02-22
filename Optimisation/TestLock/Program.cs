@@ -1,4 +1,5 @@
 ﻿using System;
+using TestLock.LazyInitialize;
 using TestLock.Volatiles;
 
 namespace TestLock
@@ -9,6 +10,9 @@ namespace TestLock
 		{
 			StrangeBehavior.LocalMain();
 			LocSpeedTest.LocalMain();
+			LazyPattern.LocalMain();
+			LazyPattern.LocalMainEnsure();
+
 			Console.ReadLine();
 		}
 	}

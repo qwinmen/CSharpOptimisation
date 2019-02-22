@@ -44,10 +44,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoResetEventLoc\SimpleWaitLock.cs" />
+    <Compile Include="LazyInitialize\LazyPattern.cs" />
     <Compile Include="LocSpeedTest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleHybridLock.cs" />
+    <Compile Include="SingletonLocs\Singleton.cs" />
+    <Compile Include="SingletonLocs\SingletonDoubleLoc.cs" />
+    <Compile Include="SingletonLocs\SingletonLightLoc.cs" />
     <Compile Include="Volatiles\StrangeBehavior.cs" />
     <Compile Include="Volatiles\ThreadSharingData.cs" />
   </ItemGroup>

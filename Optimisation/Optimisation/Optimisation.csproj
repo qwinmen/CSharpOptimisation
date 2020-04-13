@@ -39,8 +39,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patterns\Builders\EmailMessage.cs" />
     <Compile Include="Patterns\Factory.cs" />
+    <Compile Include="Patterns\Builders\MailMessageBuilder.cs" />
+    <Compile Include="Patterns\Builders\MailMessageBuilderCondition.cs" />
+    <Compile Include="Patterns\Builders\MailMessageBuilderEx.cs" />
     <Compile Include="Patterns\Singleton.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

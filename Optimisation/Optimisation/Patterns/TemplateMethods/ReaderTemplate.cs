@@ -26,5 +26,9 @@ namespace Optimisation.Patterns.TemplateMethods
 
 	public class LogEntry
 	{
+		public static LogEntry Parse(string line)
+		{
+			throw new System.NotImplementedException();
+		}
 	}
 }

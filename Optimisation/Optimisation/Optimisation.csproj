@@ -46,6 +46,9 @@
     <Compile Include="Patterns\Builders\MailMessageBuilder.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilderCondition.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilderEx.cs" />
+    <Compile Include="Patterns\Iterators\ForeachExample.cs" />
+    <Compile Include="Patterns\Iterators\LogFileSource.cs" />
+    <Compile Include="Patterns\Mediators\LogMediator.cs" />
     <Compile Include="Patterns\Singleton.cs" />
     <Compile Include="Patterns\TemplateMethods\ReaderTemplate.cs" />
   </ItemGroup>

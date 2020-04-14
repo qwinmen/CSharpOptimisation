@@ -40,11 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patterns\Builders\EmailMessage.cs" />
+    <Compile Include="Patterns\DisposePattern\ComplexResourceHolder.cs" />
+    <Compile Include="Patterns\DisposePattern\ProperComplexResourceHolder.cs" />
     <Compile Include="Patterns\Factory.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilder.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilderCondition.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilderEx.cs" />
     <Compile Include="Patterns\Singleton.cs" />
+    <Compile Include="Patterns\TemplateMethods\ReaderTemplate.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

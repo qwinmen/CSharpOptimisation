@@ -1,11 +1,11 @@
 ﻿/*
  * Пример реализации паттерна Итератор (iterator)
  * Отлично подходит для чтения данных из некоторого источника.
+ * Внешний итератор - когда процессом обхода управляет клиент (вызов .MoveNext())
  */
 
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
 using System.IO;
 using Optimisation.Patterns.TemplateMethods;
 

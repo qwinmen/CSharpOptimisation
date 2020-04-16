@@ -55,6 +55,7 @@
     <Compile Include="Patterns\Observers\LogFileReaderConcrete.cs" />
     <Compile Include="Patterns\Observers\LogFileReaderEventObservable.cs" />
     <Compile Include="Patterns\Observers\LogFileReaderRxObservable.cs" />
+    <Compile Include="Patterns\Observers\MemoryLeakObservable.cs" />
     <Compile Include="Patterns\Singleton.cs" />
     <Compile Include="Patterns\TemplateMethods\ReaderTemplate.cs" />
   </ItemGroup>

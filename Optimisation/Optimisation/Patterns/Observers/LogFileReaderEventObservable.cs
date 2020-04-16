@@ -14,6 +14,20 @@ using System.Collections.Generic;
 
 namespace Optimisation.Patterns.Observers
 {
+	class Example
+	{
+		void LogForwarded(LogFileReaderEventObservable logFileReaderEventObservable)
+		{
+			logFileReaderEventObservable.OnNewLogEntry += HandleNewLogEntry;
+		}
+
+		private void HandleNewLogEntry(object sender, LogEntryEventArgs e)
+		{
+			string logEntry = e.LogEntry;
+			string logFile = ((LogFileReaderEventObservable) sender).LogFileName;
+		}
+	}
+
 	public class LogEntryEventArgs : EventArgs
 	{
 		public LogEntryEventArgs(string logEntry)
@@ -36,9 +50,11 @@ namespace Optimisation.Patterns.Observers
 		public LogFileReaderEventObservable(string logFileName)
 		{
 			_logFileName = logFileName;
+			LogFileName = logFileName;
 		}
 
 		public event EventHandler<LogEntryEventArgs> OnNewLogEntry;
+		public string LogFileName { get; }
 
 		private void CheckFile()
 		{

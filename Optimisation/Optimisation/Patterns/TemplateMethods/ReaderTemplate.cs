@@ -30,5 +30,12 @@ namespace Optimisation.Patterns.TemplateMethods
 		{
 			throw new System.NotImplementedException();
 		}
+
+		public Severity Severity { get; set; }
+	}
+
+	public enum Severity
+	{
+		Critical = 0,
 	}
 }

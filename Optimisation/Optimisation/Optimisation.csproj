@@ -58,6 +58,8 @@
     <Compile Include="Patterns\Observers\MemoryLeakObservable.cs" />
     <Compile Include="Patterns\Singleton.cs" />
     <Compile Include="Patterns\TemplateMethods\ReaderTemplate.cs" />
+    <Compile Include="Patterns\Visitors\DataBaseLogSaver.cs" />
+    <Compile Include="Patterns\Visitors\DataSaverVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

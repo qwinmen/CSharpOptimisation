@@ -43,6 +43,7 @@
     <Compile Include="Patterns\Builders\EmailMessage.cs" />
     <Compile Include="Patterns\DisposePattern\ComplexResourceHolder.cs" />
     <Compile Include="Patterns\DisposePattern\ProperComplexResourceHolder.cs" />
+    <Compile Include="Patterns\DisposePattern\ReleaseExample.cs" />
     <Compile Include="Patterns\Factory.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilder.cs" />
     <Compile Include="Patterns\Builders\MailMessageBuilderCondition.cs" />
